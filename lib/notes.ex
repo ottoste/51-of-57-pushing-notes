@@ -8,8 +8,8 @@ defmodule Notes do
   options = OptionParser.parse(args)
 
 	  case options do
-	    {[new: note], _, _} -> IO.puts "Hello, #{note}! You're awesome!!"
-	    {[show: true], _, _} -> IO.puts "This is help message"
+	    {[new: head], tail, _} -> NewNote.add([head|tail])
+	    {[show: true], _, _} -> nil
   	end
   end
 end
