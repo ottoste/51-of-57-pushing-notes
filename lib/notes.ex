@@ -8,8 +8,8 @@ defmodule Notes do
   options = OptionParser.parse(args)
 
 	  case options do
-	    {[new: head], tail, _} -> NewNote.add([head|tail])
-	    {[show: true], _, _} -> nil
+	    {[new: head], tail, _} -> NewNotes.add([head|tail])
+	    {[show: true], _, _} -> ShowNotes.display
   	end
   end
 end

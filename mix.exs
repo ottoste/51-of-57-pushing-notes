@@ -34,6 +34,6 @@ defmodule Notes.Mixfile do
   defp deps do
     [{:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.2"},
      {:httpotion, "~> 2.1.0"}, 
-     {:poison, "~> 1.5"}]
+     {:poison, "~> 1.5"}, {:timex, "~> 0.19.5"}, {:tzdata, "~> 0.5.5"}]
   end
 end
